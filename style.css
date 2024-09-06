@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --Lightred: hsl(15, 100%, 70%);
+  --Softblue: hsl(195, 74%, 62%);
+  --Lightred-1: hsl(348, 100%, 68%);
+  --Limegreen: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Soft_orange: hsl(43, 84%, 65%);
+  --Very_dark_blue: hsl(226, 43%, 10%);
+  --Dark_blue: hsl(235, 46%, 20%);
+  --Desaturated_blue: hsl(235, 45%, 61%);
+  --Pale_Blue: hsl(236, 100%, 87%);
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--Very_dark_blue);
+}
+.container {
+  display: flex;
+  gap: 20px;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+ justify-content: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--Desaturated_blue);
+  border-radius: 20px;
+}
+.header_profile {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Blue);
+  padding: 20px;
+  border-radius: 20px;
+  height: 400px;
+}
+.profile img {
+  height: 80px;
+  width: 80px;
+}
+.profile h4 {
+  font-size: 14px;
+  color: var(--Pale_Blue);
+  margin-top: 100px;
+}
+.profile h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 300;
+}
+.details_profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.details_profile span {
+  color: var(--Dark_blue);
+  transition: 0.5s;
+}
+.details_profile span:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.trakibg_dashboord {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 50%;
+}
+.only_dach {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Lightred);
+  height: max-content;
+  border-radius: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+.img_dach {
+  display: flex;
+  justify-content: end;
+  height: 50px;
+}
+.img_dach img {
+  height: max-content;
+}
+.Mession_dach {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Dark_blue);
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  gap: 10px;
+  height: 200px;
+  justify-content: center;
+  transition: 0.5s;
+}
+.Mession_dach:hover {
+  background-color: var(--Desaturated_blue);
+}
+.header_dach {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_dach h3 {
+  color: var(--Pale_Blue);
+}
+.header_dach img {
+  width: 30px;
+  height: max-content;
+}
+.Mession_dach h1 {
+  color: #fff;
+  font-weight: 400;
+}
+.Mession_dach h4 {
+  color: var(--Pale_Blue);
+  font-size: 14px;
+}
+.only_dach:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Softblue);
+  height: max-content;
+  border-radius: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+.only_dach:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Lightred-1);
+  height: max-content;
+  border-radius: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+.only_dach:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Limegreen);
+  height: max-content;
+  border-radius: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+.only_dach:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Violet);
+  height: max-content;
+  border-radius: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+.only_dach:nth-child(8) {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Soft_orange);
+  height: max-content;
+  border-radius: 20px;
+  width: 200px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        gap: 20px;
+        height: 100vh;
+        width: 100%;
+        margin-top:600PX;
+       flex-direction: column;
+      }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--Desaturated_blue);
+    border-radius: 20px;
+    width: 100%;
+  }
+  .header_profile {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Blue);
+    padding: 10px;
+    border-radius: 20px;
+    height: 200px;
+    gap: 20px;
+    align-items: center;
+  }
+  .info_user {
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+  }
+  .details_profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+  }
+  .trakibg_dashboord {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+  .only_dach {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Lightred);
+    height: max-content;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+    width: 90%;
+  }
+  .only_dach:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Softblue);
+    height: max-content;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+    width: 90%;
+  }
+  .only_dach:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Lightred-1);
+    height: max-content;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+    width: 90%;
+  }
+  .only_dach:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Limegreen);
+    height: max-content;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+    width: 90%;
+  }
+  .only_dach:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Violet);
+    height: max-content;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+    width: 90%;
+  }
+  .only_dach:nth-child(8) {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Soft_orange);
+    height: max-content;
+    border-radius: 20px;
+    width: 200px;
+    cursor: pointer;
+    width: 90%;
+  }
+}
